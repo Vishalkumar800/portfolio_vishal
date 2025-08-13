@@ -93,21 +93,21 @@ export default function Portfolio() {
       </section>
 
       {/* Projects */}
-     {/* Projects */}
-<section id="projects" className="p-6 sm:p-8">
+       <section id="projects" className="p-6 sm:p-8">
   <h2 className="text-2xl font-bold text-center mb-6">Projects</h2>
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {/* List of projects */}
     {[
       {
-        img: "/lawyer.png",
+        img: "https://drive.google.com/uc?export=view&id=1oEGoI1x1VYPjL3IeOYkFGqi1q9_7Vam4",
         alt: "Lawyer Consultation App",
         title: "Lawyer Consultation App",
         desc: "Connect users with lawyers for consultations. Features calling, payments, search, and filters.",
-        links: [{ text: "GitHub", url: "https://github.com/Vishalkumar800/lawyer_consultation.git" }],
+        links: [
+          { text: "GitHub", url: "https://github.com/Vishalkumar800/lawyer_consultation.git" }
+        ],
       },
       {
-        img: "/habittime.png",
+        img: "https://drive.google.com/uc?export=view&id=1Ld4Y8g3D1-R-XknacPs1ZQRba-57ldIq",
         alt: "Habittime App",
         title: "Habittime: Screen Time",
         desc: "Track screen time, set usage limits, and get alerts. Built with Room DB, StateFlow, and Dagger Hilt.",
@@ -121,10 +121,12 @@ export default function Portfolio() {
         alt: "Sleep Guard App",
         title: "Sleep Guard",
         desc: "Locks phone at user-set bedtime. Uses WorkManager, Room, and Notifications.",
-        links: [{ text: "Play Store", url: "https://play.google.com/store/apps/details?id=com.rach.sleepguard" }],
+        links: [
+          { text: "Play Store", url: "https://play.google.com/store/apps/details?id=com.rach.sleepguard" }
+        ],
       },
       {
-        img: "/quizapp.png", // Replace with your actual image path
+        img: "https://drive.google.com/uc?export=view&id=1SVzjhR8eFRE5gwD6h-gDd6ZFMvgKPdch",
         alt: "Quiz App",
         title: "Quiz App",
         desc: "A fun and interactive Quiz App. Test knowledge across topics, keeps track of scores.",
@@ -147,11 +149,12 @@ export default function Portfolio() {
         <p className="text-gray-700">{project.desc}</p>
         <div className="mt-2 space-x-2">
           {project.links.map((link) => (
-            <a key={link.text}
-               className="text-purple-600"
-               href={link.url}
-               target="_blank"
-               rel="noopener noreferrer"
+            <a
+              key={link.text}
+              className="text-purple-600"
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {link.text}
             </a>
@@ -161,6 +164,7 @@ export default function Portfolio() {
     ))}
   </div>
 </section>
+
 
 
       {/* Education */}
