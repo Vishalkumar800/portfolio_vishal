@@ -126,7 +126,7 @@ export default function Portfolio() {
         ],
       },
       {
-        img: "https://drive.google.com/uc?export=view&id=1SVzjhR8eFRE5gwD6h-gDd6ZFMvgKPdch",
+        img: "https://drive.google.com/file/d/1SVzjhR8eFRE5gwD6h-gDd6ZFMvgKPdch/view?usp=drive_link",
         alt: "Quiz App",
         title: "Quiz App",
         desc: "A fun and interactive Quiz App. Test knowledge across topics, keeps track of scores.",
