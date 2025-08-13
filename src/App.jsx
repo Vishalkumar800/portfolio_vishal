@@ -98,7 +98,7 @@ export default function Portfolio() {
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {[
       {
-        img: "https://drive.google.com/uc?export=view&id=1oEGoI1x1VYPjL3IeOYkFGqi1q9_7Vam4",
+        img: "/lawyer.png",
         alt: "Lawyer Consultation App",
         title: "Lawyer Consultation App",
         desc: "Connect users with lawyers for consultations. Features calling, payments, search, and filters.",
@@ -107,7 +107,7 @@ export default function Portfolio() {
         ],
       },
       {
-        img: "https://drive.google.com/uc?export=view&id=1Ld4Y8g3D1-R-XknacPs1ZQRba-57ldIq",
+        img: "/habitime.png",
         alt: "Habittime App",
         title: "Habittime: Screen Time",
         desc: "Track screen time, set usage limits, and get alerts. Built with Room DB, StateFlow, and Dagger Hilt.",
@@ -126,7 +126,7 @@ export default function Portfolio() {
         ],
       },
       {
-        img: "https://drive.google.com/file/d/1SVzjhR8eFRE5gwD6h-gDd6ZFMvgKPdch/view?usp=drive_link",
+        img: "/quizapp.png",
         alt: "Quiz App",
         title: "Quiz App",
         desc: "A fun and interactive Quiz App. Test knowledge across topics, keeps track of scores.",
@@ -164,8 +164,6 @@ export default function Portfolio() {
     ))}
   </div>
 </section>
-
-
 
       {/* Education */}
       <section id="education" className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 sm:p-8">
