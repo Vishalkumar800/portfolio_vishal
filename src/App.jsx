@@ -93,58 +93,75 @@ export default function Portfolio() {
       </section>
 
       {/* Projects */}
-      <section id="projects" className="p-6 sm:p-8">
-        <h2 className="text-2xl font-bold text-center mb-6">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-          {/* Lawyer Consultation */}
-          <div className="bg-white shadow-lg rounded p-4 border-l-4 border-purple-400">
-            <img
-              src="/lawyer.png"
-              alt="Lawyer Consultation App"
-              className="w-full h-40 object-cover rounded"
-              onError={(e) => e.target.src = "/default_project.png"}
-            />
-            <h3 className="font-semibold text-lg mt-3">Lawyer Consultation App</h3>
-            <p className="text-gray-700">Connect users with lawyers for consultations. Features calling, payments, search, and filters.</p>
-            <div className="mt-2 space-x-2">
-              <a className="text-purple-600" href="https://github.com/Vishalkumar800/lawyer_consultation.git" target="_blank">GitHub</a>
-            </div>
-          </div>
-
-          {/* Habittime */}
-          <div className="bg-white shadow-lg rounded p-4 border-l-4 border-purple-400">
-            <img
-              src="/habittime.png"
-              alt="Habittime App"
-              className="w-full h-40 object-cover rounded"
-              onError={(e) => e.target.src = "/default_project.png"}
-            />
-            <h3 className="font-semibold text-lg mt-3">Habittime: Screen Time</h3>
-            <p className="text-gray-700">Track screen time, set usage limits, and get alerts. Built with Room DB, StateFlow, and Dagger Hilt.</p>
-            <div className="mt-2 space-x-2">
-              <a className="text-purple-600" href="https://play.google.com/store/apps/details?id=com.rach.habitchange" target="_blank">Play Store</a>
-              <a className="text-purple-600" href="https://github.com/Vishalkumar800/habbitime-App.git" target="_blank">GitHub</a>
-            </div>
-          </div>
-
-          {/* Sleep Guard */}
-          <div className="bg-white shadow-lg rounded p-4 border-l-4 border-purple-400">
-            <img
-              src="/sleepguard.png"
-              alt="Sleep Guard App"
-              className="w-full h-40 object-cover rounded"
-              onError={(e) => e.target.src = "/default_project.png"}
-            />
-            <h3 className="font-semibold text-lg mt-3">Sleep Guard</h3>
-            <p className="text-gray-700">Locks phone at user-set bedtime. Uses WorkManager, Room, and Notifications.</p>
-            <div className="mt-2 space-x-2">
-              <a className="text-purple-600" href="https://play.google.com/store/apps/details?id=com.rach.sleepguard" target="_blank">Play Store</a>
-            </div>
-          </div>
-
+     {/* Projects */}
+<section id="projects" className="p-6 sm:p-8">
+  <h2 className="text-2xl font-bold text-center mb-6">Projects</h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {/* List of projects */}
+    {[
+      {
+        img: "/lawyer.png",
+        alt: "Lawyer Consultation App",
+        title: "Lawyer Consultation App",
+        desc: "Connect users with lawyers for consultations. Features calling, payments, search, and filters.",
+        links: [{ text: "GitHub", url: "https://github.com/Vishalkumar800/lawyer_consultation.git" }],
+      },
+      {
+        img: "/habittime.png",
+        alt: "Habittime App",
+        title: "Habittime: Screen Time",
+        desc: "Track screen time, set usage limits, and get alerts. Built with Room DB, StateFlow, and Dagger Hilt.",
+        links: [
+          { text: "Play Store", url: "https://play.google.com/store/apps/details?id=com.rach.habitchange" },
+          { text: "GitHub", url: "https://github.com/Vishalkumar800/habbitime-App.git" },
+        ],
+      },
+      {
+        img: "/sleepguard.png",
+        alt: "Sleep Guard App",
+        title: "Sleep Guard",
+        desc: "Locks phone at user-set bedtime. Uses WorkManager, Room, and Notifications.",
+        links: [{ text: "Play Store", url: "https://play.google.com/store/apps/details?id=com.rach.sleepguard" }],
+      },
+      {
+        img: "/quizapp.png", // Replace with your actual image path
+        alt: "Quiz App",
+        title: "Quiz App",
+        desc: "A fun and interactive Quiz App. Test knowledge across topics, keeps track of scores.",
+        links: [
+          { text: "Play Store", url: "https://play.google.com/store/apps/details?id=com.rach.co" }
+        ],
+      },
+    ].map((project) => (
+      <div
+        key={project.title}
+        className="bg-white shadow-lg rounded p-4 border-l-4 border-purple-400"
+      >
+        <img
+          src={project.img}
+          alt={project.alt}
+          className="w-full h-40 object-cover rounded"
+          onError={(e) => (e.target.src = "/default_project.png")}
+        />
+        <h3 className="font-semibold text-lg mt-3">{project.title}</h3>
+        <p className="text-gray-700">{project.desc}</p>
+        <div className="mt-2 space-x-2">
+          {project.links.map((link) => (
+            <a key={link.text}
+               className="text-purple-600"
+               href={link.url}
+               target="_blank"
+               rel="noopener noreferrer"
+            >
+              {link.text}
+            </a>
+          ))}
         </div>
-      </section>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* Education */}
       <section id="education" className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 sm:p-8">
