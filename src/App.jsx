@@ -107,6 +107,15 @@ export default function Portfolio() {
         ],
       },
       {
+        img : "/doctorposter.jpg",
+        alt: "Doctor Consultaion App",
+        title : "Doctor Consultaion App",
+        desc: "Book appointment with doctors for consultations. Features Booking , admin Panel and separate panel for register doctor, payments, search, and filters.",
+        links: [
+          { text: "Video Link", url: "https://www.linkedin.com/posts/vishal-vishal-514537294_my-project-doctor-appointment-booking-app-activity-7233722154486284288-vBTf?utm_source=share&utm_medium=member_android&rcm=ACoAAEdFISABvagDT467mMp6rxrUZnUk5jxUdbQ" }
+        ]
+      }
+      {
         img: "/habitime.png",
         alt: "Habittime App",
         title: "Habittime: Screen Time",
