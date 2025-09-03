@@ -66,7 +66,7 @@ export default function Portfolio() {
         {/* Resume Download Button */}
         <div className="mt-6">
           <a
-            href="https://drive.google.com/uc?export=download&id=1yfBwIiZDSjYIrG5MVx9pjtLiRA5iFS2N"
+            href="https://drive.google.com/file/d/1W1j8ByS-5v-7QSQIFVLLeOj40sysxz6p/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg shadow-lg hover:scale-105 transform transition duration-300"
@@ -133,6 +133,15 @@ export default function Portfolio() {
         links: [
           { text: "Play Store", url: "https://play.google.com/store/apps/details?id=com.rach.sleepguard" }
         ],
+      },
+      {
+       img : "/newsapp.jpg",
+       alt : "News App ",
+       title : "News App",
+       desc : "Develop news application using jetpack compose, MVVM , Kotlin , Retrofit, viewModels. Fetch news data from newsapi.org" ,
+       links:[
+         { text: "Github", url: "https://play.google.com/store/apps/details?id=com.rach.sleepguard" }
+       ]
       },
       {
         img: "/quizapp.png",
